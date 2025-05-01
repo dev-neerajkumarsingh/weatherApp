@@ -1,0 +1,12 @@
+/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/armeabi-v7a/CMakeFiles/appmodules.dir
+/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/armeabi-v7a/RNCGeolocationSpec_autolinked_build/CMakeFiles/react_codegen_RNCGeolocationSpec.dir
+/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/armeabi-v7a/RNCGeolocationSpec_autolinked_build/CMakeFiles/edit_cache.dir
+/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/armeabi-v7a/RNCGeolocationSpec_autolinked_build/CMakeFiles/rebuild_cache.dir
+/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/armeabi-v7a/RNPermissionsSpec_autolinked_build/CMakeFiles/react_codegen_RNPermissionsSpec.dir
+/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/armeabi-v7a/RNPermissionsSpec_autolinked_build/CMakeFiles/edit_cache.dir
+/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/armeabi-v7a/RNPermissionsSpec_autolinked_build/CMakeFiles/rebuild_cache.dir
+/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/armeabi-v7a/rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir
+/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/armeabi-v7a/rnsvg_autolinked_build/CMakeFiles/edit_cache.dir
+/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/armeabi-v7a/rnsvg_autolinked_build/CMakeFiles/rebuild_cache.dir

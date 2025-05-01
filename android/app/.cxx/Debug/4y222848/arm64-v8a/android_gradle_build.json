@@ -1,0 +1,67 @@
+{
+  "buildFiles": [
+    "/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/node_modules/@react-native-community/geolocation/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/node_modules/react-native-permissions/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt",
+    "/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/neeraj/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/neeraj/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/.cxx/Debug/4y222848/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "appmodules::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "appmodules",
+      "output": "/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/build/intermediates/cxx/Debug/4y222848/obj/arm64-v8a/libappmodules.so",
+      "runtimeFiles": [
+        "/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/build/intermediates/cxx/Debug/4y222848/obj/arm64-v8a/libreact_codegen_rnsvg.so",
+        "/Users/neeraj/.gradle/caches/8.13/transforms/72cde7dc85b5006383f56c98fcfedfa5/transformed/fbjni-0.7.0/prefab/modules/fbjni/libs/android.arm64-v8a/libfbjni.so",
+        "/Users/neeraj/.gradle/caches/8.13/transforms/072209afb1c52d43fe8bcfe0160879d7/transformed/react-android-0.79.1-debug/prefab/modules/jsi/libs/android.arm64-v8a/libjsi.so",
+        "/Users/neeraj/.gradle/caches/8.13/transforms/072209afb1c52d43fe8bcfe0160879d7/transformed/react-android-0.79.1-debug/prefab/modules/reactnative/libs/android.arm64-v8a/libreactnative.so"
+      ]
+    },
+    "react_codegen_RNCGeolocationSpec::@1b959fcb56e23f7716ba": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "react_codegen_RNCGeolocationSpec"
+    },
+    "react_codegen_RNPermissionsSpec::@7ad697819b753921c957": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "react_codegen_RNPermissionsSpec"
+    },
+    "react_codegen_rnsvg::@4f40eb209d0c0b4a3b65": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "react_codegen_rnsvg",
+      "output": "/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/android/app/build/intermediates/cxx/Debug/4y222848/obj/arm64-v8a/libreact_codegen_rnsvg.so",
+      "runtimeFiles": [
+        "/Users/neeraj/.gradle/caches/8.13/transforms/072209afb1c52d43fe8bcfe0160879d7/transformed/react-android-0.79.1-debug/prefab/modules/reactnative/libs/android.arm64-v8a/libreactnative.so",
+        "/Users/neeraj/.gradle/caches/8.13/transforms/072209afb1c52d43fe8bcfe0160879d7/transformed/react-android-0.79.1-debug/prefab/modules/jsi/libs/android.arm64-v8a/libjsi.so",
+        "/Users/neeraj/.gradle/caches/8.13/transforms/72cde7dc85b5006383f56c98fcfedfa5/transformed/fbjni-0.7.0/prefab/modules/fbjni/libs/android.arm64-v8a/libfbjni.so"
+      ]
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/neeraj/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/neeraj/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

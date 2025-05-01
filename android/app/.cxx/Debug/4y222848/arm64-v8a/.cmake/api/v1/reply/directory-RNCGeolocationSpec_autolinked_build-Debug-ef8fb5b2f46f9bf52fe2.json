@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "RNCGeolocationSpec_autolinked_build",
+		"source" : "/Users/neeraj/app_projects/test/weatherapp_demo/WeatherAppDemo/node_modules/@react-native-community/geolocation/android/build/generated/source/codegen/jni"
+	}
+}
