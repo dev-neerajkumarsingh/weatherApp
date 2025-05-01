@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  useColorScheme,
   StyleSheet,
   View,
   TextInput,
@@ -51,22 +50,21 @@ interface SearchBoxProps {
   value: string;
   onChangeText: (text: string) => void;
   onSearch: () => void;
+  isDarkModeEnabled: boolean;
 }
 
-export const SearchBox: React.FC<SearchBoxProps> = ({value, onChangeText, onSearch}) => {
-  const isDarkMode = useColorScheme() === 'dark';
-
+export const SearchBox: React.FC<SearchBoxProps> = ({value, onChangeText, onSearch, isDarkModeEnabled}) => {
   return (
-    <View style={[styles.container, containerStyles.container(isDarkMode)]}>
+    <View style={[styles.container, containerStyles.container(isDarkModeEnabled)]}>
       <TextInput
-        style={{width: '83%', backgroundColor: isDarkMode ? '#191C20' : Colors.white, marginLeft: 5, color: isDarkMode ? Colors.white : Colors.black}}
+        style={{width: '83%', backgroundColor: isDarkModeEnabled ? '#191C20' : Colors.white, marginLeft: 5, color: isDarkModeEnabled ? Colors.white : Colors.black}}
         value={value}
         onChangeText={onChangeText}
         placeholder="Enter City Name"
         placeholderTextColor={'#808080'}
       />
       <Pressable testID="get-weather-button" style={{width: 40, height: 40, alignItems: 'center', justifyContent: 'center'}} onPress={onSearch}>
-        <SearchIcon width={18} height={18} color={isDarkMode ? Colors.white : Colors.black} />
+        <SearchIcon width={18} height={18} color={isDarkModeEnabled ? Colors.white : Colors.black} />
       </Pressable>
     </View>
   );

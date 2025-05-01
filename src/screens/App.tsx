@@ -3,7 +3,7 @@ import {useColorScheme, View, StatusBar, Pressable, Alert} from 'react-native';
 import {Card} from '../components/Card';
 import {SearchBox} from '../components/SearchBox';
 import {Styles} from './Styles';
-import {RefreshIcon} from '../assets';
+import {RefreshIcon, DarkModeIcon, LightModeIcon} from '../assets';
 import {useTryCatch} from '../utils/CommonHooks/useTryCatch';
 import {WEATHER_API_KEY} from '../utils/Constants';
 import {useLocationHook} from '../utils/CommonHooks/useLocation';
@@ -13,12 +13,17 @@ import axios from 'axios';
 export const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
   const [states, setStates] = React.useState({
-    loader: false,
+    loader: true,
     data: {},
     error: '',
     searchText: '',
     currentLocation: '',
+    isDarkModeEnabled: false,
   });
+
+  React.useEffect(() => {
+    setStates(prev => ({...prev, isDarkModeEnabled: isDarkMode}));
+  }, [isDarkMode]);
 
   const fetchUserLocationData = async () => {
     setStates(prev => ({...prev, loader: true, error: '', searchText: ''}));
@@ -65,11 +70,15 @@ export const App = () => {
     }
   };
 
+  const toggleMode = () => {
+    setStates(prev => ({...prev, isDarkModeEnabled: !prev.isDarkModeEnabled}));
+  };
+
   return (
-    <View style={isDarkMode ? Styles.darkContainer : Styles.lightContainer}>
+    <View style={states.isDarkModeEnabled ? Styles.darkContainer : Styles.lightContainer}>
       <StatusBar
         translucent
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+        barStyle={states.isDarkModeEnabled ? 'light-content' : 'dark-content'}
         backgroundColor="transparent"
       />
       {states.loader && <Loader visible={states.loader} />}
@@ -80,21 +89,41 @@ export const App = () => {
           setStates(prev => ({...prev, searchText: val}));
         }}
         onSearch={() => {
-          console.log('#>> states.searchText : ', states.searchText);
+          //console.log('#>> states.searchText : ', states.searchText);
           setStates(prev => ({...prev, loader: true}));
           fetchWeatherFromSearchData(states.searchText);
         }}
+        isDarkModeEnabled={states.isDarkModeEnabled}
       />
       {states.data && (
-        <Card weatherData={states.data} location={states.currentLocation} />
+        <Card weatherData={states.data} location={states.currentLocation} isDarkModeEnabled={states.isDarkModeEnabled} />
       )}
-      <Pressable style={Styles.btn} onPress={fetchUserLocationData}>
-        <RefreshIcon
-          width={30}
-          height={30}
-          color={isDarkMode ? '#fff' : '#000'}
-        />
-      </Pressable>
+      <View style={Styles.floatBtnContainer}>
+        <Pressable
+          style={[
+            Styles.btn1,
+            {backgroundColor: states.isDarkModeEnabled ? '#000' : '#fff'},
+          ]}
+          onPress={fetchUserLocationData}>
+          <RefreshIcon
+            width={30}
+            height={30}
+            color={states.isDarkModeEnabled ? '#fff' : '#191C20'}
+          />
+        </Pressable>
+        <Pressable
+          style={[
+            Styles.btn2,
+            {backgroundColor: states.isDarkModeEnabled ? '#000' : '#fff'},
+          ]}
+          onPress={toggleMode}>
+          {states.isDarkModeEnabled ? (
+            <DarkModeIcon width={30} height={30} color={'#fff'} />
+          ) : (
+            <LightModeIcon width={30} height={30} color={'#191C20'} />
+          )}
+        </Pressable>
+      </View>
     </View>
   );
 };
