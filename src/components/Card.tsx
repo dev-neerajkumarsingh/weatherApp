@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Image} from 'react-native';
+import {View, StyleSheet, Image, useColorScheme} from 'react-native';
 import {CommonText} from './CommonText';
 import {
   LocationIcon,
@@ -37,10 +37,10 @@ interface CardProps {
 }
 
 export const Card: React.FC<CardProps> = ({weatherData, location}) => {
-  console.log('#>> weatherData :: ', JSON.stringify(weatherData));
+  const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, {backgroundColor: isDarkMode ? '#fff' : '#191C20'}]}>
       <View
         style={{
           marginTop: 10,

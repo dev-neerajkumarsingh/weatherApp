@@ -1,9 +1,9 @@
 import React from 'react';
-import {View, ActivityIndicator, StyleSheet} from 'react-native';
+import {Modal, View, ActivityIndicator, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    ...StyleSheet.absoluteFillObject,
+    flex: 1,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     justifyContent: 'center',
     alignItems: 'center',
@@ -26,10 +26,12 @@ export const Loader: React.FC<LoaderProps> = ({visible = false}) => {
   if (!visible) return null;
 
   return (
-    <View style={styles.container}>
-      <View style={styles.centerContainer}>
-        <ActivityIndicator size="large" color="#fff" />
+    <Modal visible={visible} statusBarTranslucent transparent>
+      <View style={styles.container}>
+        <View style={styles.centerContainer}>
+          <ActivityIndicator size="large" color="#fff" />
+        </View>
       </View>
-    </View>
+    </Modal>
   );
 };

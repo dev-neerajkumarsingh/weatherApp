@@ -92,7 +92,7 @@ export const App = () => {
         <RefreshIcon
           width={30}
           height={30}
-          color={isDarkMode ? '#000' : '#fff'}
+          color={isDarkMode ? '#fff' : '#000'}
         />
       </Pressable>
     </View>
