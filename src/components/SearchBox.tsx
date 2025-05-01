@@ -65,7 +65,7 @@ export const SearchBox: React.FC<SearchBoxProps> = ({value, onChangeText, onSear
         placeholder="Enter City Name"
         placeholderTextColor={'#808080'}
       />
-      <Pressable style={{width: 40, height: 40, alignItems: 'center', justifyContent: 'center'}} onPress={onSearch}>
+      <Pressable testID="get-weather-button" style={{width: 40, height: 40, alignItems: 'center', justifyContent: 'center'}} onPress={onSearch}>
         <SearchIcon width={18} height={18} color={isDarkMode ? Colors.white : Colors.black} />
       </Pressable>
     </View>
