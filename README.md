@@ -81,6 +81,12 @@ You've successfully run and modified your React Native App. :partying_face:
 
 ### Now what?
 
+- To run the unit test using jest, run the following command from the root of your React Native project:
+
+```sh
+# Using npm
+npm test -- --config=jest.config.js
+```
 - If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
 - If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
 
