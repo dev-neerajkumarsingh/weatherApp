@@ -54,7 +54,7 @@ export const App = () => {
         loader: false,
       }));
     }
-    if (data?.status) {
+    if (data?.data?.current) {
       setStates(prev => ({
         ...prev,
         error: '',

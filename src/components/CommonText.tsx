@@ -37,7 +37,7 @@ export const CommonText: React.FC<CommonTextProps> = ({
   return (
     <Text
       style={[
-        styles.text(isDarkMode ? Colors.blacl : Colors.white, fontSize),
+        styles.text(isDarkMode ? Colors.black : Colors.white, fontSize),
         moreStyle,
       ]}>
       {text}
